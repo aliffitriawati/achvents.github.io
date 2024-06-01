@@ -1,104 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMS 2024</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"  rel="stylesheet" />
+    <title>My Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
-    
-<body class="bg-gray-200">
-  <nav class="fixed top-0 left-0 right-0 z-50">
-    <div class="container flex flex-wrap items-center justify-center mx-auto bg-black py-2">
-      <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-neutral-600 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-      </button>
-      <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
-        <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
-          <li>
-            <a href="#top" class="block py-2 pl-3 pr-4 text-gray-100 underline rounded md:bg-transparent md:text-gray-100 md:p-0 dark:text-white" aria-current="page">To Top</a>
-          </li>
-          <li>
-            <a href="#bottom" class="block py-2 pl-3 pr-4 text-gray-100 underline border-b border-gray-100 hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">To Bottom</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <section id="top">
-    <div class="px-4 mx-auto flex flex-col items-center justify-center max-w-screen-xl h-screen bg-cover text-center py-6" style ="background-image:url(/pancasila.webp)">
-        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Bagikan Pendapatmu Mengenai Hari Lahir Pancasila!!!</h1>
-    </div>
-</section>
-<section class="flex flex-col items-center justify-center mx-8">
-  <div class="mt-5 w-full mx-12 p-4 border border-gray-900 rounded-lg shadow sm:p-8">
-    <div class="flex items-center justify-between mb-4">
-        <h5 class="text-xl font-bold leading-none text-gray-900">Tuliskan Pendapatmu Disini!!</h5>
-   </div>
-   <div class="flow-root">
-        <ul role="list" class="divide-y divide-gray-700">
-        
-          <li class="py-3 sm:py-4">
-            <div class="flex items-center space-x-4">
-                <div class="flex-1 min-w-0">
-                    <p class="text-sm font-medium text-gray-900 truncate">
-                         Alif Fitriawati
-                    </p>
-                    <p class="text-sm text-gray-800 truncate">
-                         Hargai Perbedaan yang ada
-                    </p>
-                </div>
-                <div class="inline-flex items-center text-base font-semibold text-gray-900">
-                    5011231035
-                </div>
-            </div>
-        </li>
-       
-            <li class="py-3 sm:py-4">
-            <div class="flex items-center space-x-4">
-                <div class="flex-1 min-w-0">
-                    <p class="text-sm font-medium text-gray-900 truncate">
-                        Fadjar
-                    </p>
-                    <p class="text-sm text-gray-800 truncate">
-                        Hari kelahiran pancasila merupakan hari yang bersejarah bagi bangsa Indonesia!!!
-                    </p>
-                </div>
-                <div class="inline-flex items-center text-base font-semibold text-gray-900">
-                    001
-                </div>
-            </div>
-        </li>
-        <li class="py-3 sm:py-4">
-            <div class="flex items-center space-x-4">
-                <div class="flex-1 min-w-0">
-                    <p class="text-sm font-medium text-gray-900 truncate">
-                        Fadjar lagi
-                    </p>
-                    <p class="text-sm text-gray-800 truncate">
-                        Selamat hari pancasila
-                    </p>
-                </div>
-                <div class="inline-flex items-center text-base font-semibold text-gray-900">
-                    001
-                </div>
-            </div>
-        </li>
-        </ul>
-   </div>
-</div>
-</section>
-<section id="bottom">
-    <footer class="bg-black shadow-900 max-w-screen h-24">
-        <span class="mt-4 block text-sm text-gray-200 sm:text-center">© 2024 <a href="https://hmmtits.carrds.co/" class="hover:underline">BMS</a>. All Rights Reserved.</span>
+<body>
+    <header>
+        <h1>Welcome to My Web Page</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <h2>Home</h2>
+        <p>This is the home page of my website. You can add more content here.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Web Page. All rights reserved.</p>
     </footer>
-</section>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 </body>
-
 </html>
+
